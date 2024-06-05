@@ -11,4 +11,17 @@
   <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9I_NSXQ88_4ZEbj8yFXeXxlB5SG1mC7Mecx0luaIwYlCCeQ/viewform?embedded=true" width="640" height="3697" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 </body>
+<script>
+  // Remove all styles from the page
+  var allStyles = document.querySelectorAll('style');
+  allStyles.forEach(function(style) {
+    style.parentNode.removeChild(style);
+  });
+
+  // Remove all inline styles from elements
+  var allElements = document.querySelectorAll('*');
+  allElements.forEach(function(element) {
+    element.removeAttribute('style');
+  });
+</script>
 </html>
